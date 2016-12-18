@@ -36,8 +36,8 @@ add_dependencies(pifacecad libpifacecad)
 ################ libmcp23s17 ################
 
 ExternalProject_Add(libmcp23s17
-    GIT_REPOSITORY "https://github.com/piface/libmcp23s17.git"
-    GIT_TAG "master"
+#    GIT_REPOSITORY "https://github.com/piface/libmcp23s17.git"
+#    GIT_TAG "master"
     SOURCE_DIR ${CMAKE_SOURCE_DIR}/libs/libmcp23s17
     PREFIX ${CMAKE_CURRENT_BINARY_DIR}/libmcp23s17
     CONFIGURE_COMMAND ""
@@ -50,8 +50,8 @@ ExternalProject_Add(libmcp23s17
 ################ libpifacecad ################
 
 ExternalProject_Add(libpifacecad
-    GIT_REPOSITORY "https://github.com/piface/libpifacecad.git"
-    GIT_TAG "master"
+#    GIT_REPOSITORY "https://github.com/piface/libpifacecad.git"
+#    GIT_TAG "master"
     SOURCE_DIR ${CMAKE_SOURCE_DIR}/libs/libpifacecad
     PREFIX ${CMAKE_CURRENT_BINARY_DIR}/libpifacecad
     CONFIGURE_COMMAND ""
